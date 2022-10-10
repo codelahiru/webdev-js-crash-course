@@ -1,4 +1,4 @@
-//// Variables - var, let, const
+//// Variables - var, let, const --------------------------------------------
 
 // If you want a general rule: always declare variables with const.
 // If you think the value of the variable can change, use let.
@@ -31,7 +31,7 @@ console.log(typeof z);
 console.log(typeof y);
 */
 
-//// Concatenation - using template literals with backtext `
+//// Concatenation - using template literals with backtext ` -----------------
 /*
 const myname = 'Gayan';
 const myage = 38;
@@ -40,7 +40,7 @@ hello = `My name is ${myname} and I am ${myage} years old..`;
 console.log(hello);
 */
 
-//// Arrays - Variables that hold multiple values
+//// Arrays - Variables that hold multiple values ----------------------------
 /*
 const numbers = new Array(1,2,3,4,5);
 console.log(numbers);
@@ -54,7 +54,7 @@ fruits.push('mangoes'); // to add elements
 console.log(fruits.indexOf('oranges'));
 */
 
-//// Object Literals (contains key value pairs)
+//// Object Literals (contains key value pairs) ------------------------------
 /*
 const person = {
 
@@ -79,7 +79,7 @@ const {firstName, lastName, age, address:{city}} = person;
 console.log(firstName, lastName, age, city);
 */
 
-//// Array of Objects
+//// Array of Objects ----------------------------------------------------
 
 const toDos = [{
     id:1,
@@ -104,7 +104,15 @@ console.log(toDos);
 const toDosJson = JSON.stringify(toDos);
 console.log(toDosJson);
 
+//// Loops ---------------------------------------------------------------
 
+// 1. For loop
+
+for(let i=0; i<10; i++){
+
+    console.log(i)
+
+};
 
 
 
