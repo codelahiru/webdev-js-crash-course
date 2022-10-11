@@ -108,7 +108,7 @@ console.log(toDosJson);
 
 // 1. For loop
 
-for(let i=0; i<5; i++){
+for(let i=0; i<7; i++){
 
     console.log(`iteration of ${i}`);
 };
