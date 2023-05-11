@@ -108,7 +108,15 @@ console.log(toDosJson);
 
 // 1. For loop
 
+<<<<<<< HEAD
 for(let i=0; i<7; i++){
+=======
+<<<<<<< HEAD
+for(let i=0; i<7; i++){
+=======
+for(let i=0; i<6; i++){
+>>>>>>> ab1fd98be3269663be75d82f010796bff4a976a5
+>>>>>>> c2ab2257b34c09b5c503b292874cbb6104611107
 
     console.log(`iteration of 111022_1942  ${i}`);
 };
