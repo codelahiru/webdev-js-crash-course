@@ -108,10 +108,32 @@ console.log(toDosJson);
 
 // 1. For loop
 
-for(let i=0; i<6; i++){
+for(let i=0; i<7; i++){
 
-    console.log(`iteration of ${i}`);
+    console.log(`iteration of 111022_1942  ${i}`);
 };
+
+// --------------------------------------------------
+
+function findPrimes(n) {
+    var primes = [];
+    for (var i = 2; i <= n; i++) {
+      var isPrime = true;
+      for (var j = 2; j < i; j++) {
+        if (i % j == 0) {
+          isPrime = false;
+          break;
+        }
+      }
+      if (isPrime) {
+        primes.push(i);
+      }
+    }
+    return primes;
+  }
+  
+  console.log(findPrimes(1000000000000));
+  
 
 
 
