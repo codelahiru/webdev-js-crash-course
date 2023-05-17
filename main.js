@@ -1,4 +1,4 @@
-//// Variables - var, let, const --------------------------------------------
+//// 1. Variables - var, let, const --------------------------------------------
 
 // If you want a general rule: always declare variables with const.
 // If you think the value of the variable can change, use let.
@@ -11,7 +11,7 @@ age = 33;
 console.log(age);
 */
 
-//// JavaScript Data Types - String, numbers, boolean, null, undefined, symbol
+//// 2. JavaScript Data Types - String, numbers, boolean, null, undefined, symbol
 
 /*
 const name1 = 'Henry';
@@ -31,7 +31,7 @@ console.log(typeof z);
 console.log(typeof y);
 */
 
-//// Concatenation - using template literals with backtext ` -----------------
+//// 3. Concatenation - using template literals with backtext ` -----------------
 /*
 const myname = 'Gayan';
 const myage = 38;
@@ -40,7 +40,7 @@ hello = `My name is ${myname} and I am ${myage} years old..`;
 console.log(hello);
 */
 
-//// Arrays - Variables that hold multiple values ----------------------------
+//// 4. Arrays - Variables that hold multiple values ----------------------------
 /*
 const numbers = new Array(1,2,3,4,5);
 console.log(numbers);
@@ -54,9 +54,16 @@ fruits.push('mangoes'); // to add elements
 console.log(fruits.indexOf('oranges'));
 */
 
-//// Object Literals (contains key value pairs) ------------------------------
+//// 5. Object Literals (contains key / value pairs) ------------------------------
 /*
-const person = {
+// 5.1 
+
+const person1 = {
+
+  firstName: 'Jack', lastName: 'Brown', age: 20, hobbies: ['vedio games', 'reading', 'workout'], address: {stree: ';lsdkfjg', city: 'xkdljfb', limit: 290835}
+}
+
+const person2 = {
 
     firstName: 'John',
     lastName: 'Doe',
@@ -69,79 +76,59 @@ const person = {
     }
 }
 
-console.log(person.address, person.firstName);
+console.log(person1.firstName, person1.lastName);
 
-console.log(person.hobbies[1]);
+console.log(person1.hobbies[1]);
 
 // Destructuring - to pull stuff out from the Object Literal
 
-const {firstName, lastName, age, address:{city}} = person;
-console.log(firstName, lastName, age, city);
-*/
+const {firstName, lastName, age, address:{city}} = person2;
+console.log(firstName); // Ans: John
+console.log(city);
 
-//// Array of Objects ----------------------------------------------------
+// directly add properties
 
-const toDos = [{
-    id:1,
+person2.email = 'john@gmail.com'
+console.log(person2);
+
+
+// 5.2 Array of Objects Literals
+
+const toDos = [
+  
+  { id: 1, 
     text: 'take out trash',
     isCompleted: true
-},
-{
-    id:2,
-    text: 'meeting 02',
+  },
+
+  { id: 2, 
+    text: 'Meeting with boss',
     isCompleted: true
-},
-{
-    id:3,
-    text: 'call a friend',
+  },
+
+  { id: 3, 
+    text: 'Dentist appointment',
     isCompleted: false
-}];
+  }
+];
 
-console.log(toDos);
+console.log(toDos[1].text);
 
-// to convert toDos into JSON format
+// 5.3 To convert Array of Object Literals into JSON format - When sending data to a SERVER, we usually send it via JSON format
 
 const toDosJson = JSON.stringify(toDos);
+
 console.log(toDosJson);
+*/
+//// 6. Loops ---------------------------------------------------------------
 
-//// Loops ---------------------------------------------------------------
+// 6.1 For loop
 
-// 1. For loop
+for (let i=0; i<5; i++){
+  console.log(`For loop No ${i}`);
+}
 
-<<<<<<< HEAD
-for(let i=0; i<7; i++){
-=======
-<<<<<<< HEAD
-for(let i=0; i<7; i++){
-=======
-for(let i=0; i<6; i++){
->>>>>>> ab1fd98be3269663be75d82f010796bff4a976a5
->>>>>>> c2ab2257b34c09b5c503b292874cbb6104611107
-
-    console.log(`iteration of 111022_1942  ${i}`);
-};
-
-// --------------------------------------------------
-
-function findPrimes(n) {
-    var primes = [];
-    for (var i = 2; i <= n; i++) {
-      var isPrime = true;
-      for (var j = 2; j < i; j++) {
-        if (i % j == 0) {
-          isPrime = false;
-          break;
-        }
-      }
-      if (isPrime) {
-        primes.push(i);
-      }
-    }
-    return primes;
-  }
-  
-  console.log(findPrimes(1000000000000));
-  
+// 6.2 while loop
 
 
 
