@@ -124,7 +124,7 @@ console.log(toDosJson);
 
 // 6.1 For loop
 
-for (let i=0; i<5; i++){
+for (let i=0; i<10 i++){
   console.log(`For loop No ${i}`);
 }
 
