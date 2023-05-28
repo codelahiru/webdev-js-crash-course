@@ -54,6 +54,17 @@ fruits.push('mangoes'); // to add elements
 console.log(fruits.indexOf('oranges'));
 */
 
+// Array Methods
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+
+console.log(size);
+
+let stringify = fruits.toString();
+console.log(stringify);
+
+
 //// Object Literals (contains key value pairs) ------------------------------
 /*
 const person = {
@@ -81,66 +92,10 @@ console.log(firstName, lastName, age, city);
 
 //// Array of Objects ----------------------------------------------------
 
-const toDos = [{
-    id:1,
-    text: 'take out trash',
-    isCompleted: true
-},
-{
-    id:2,
-    text: 'meeting 02',
-    isCompleted: true
-},
-{
-    id:3,
-    text: 'call a friend',
-    isCompleted: false
-}];
 
-console.log(toDos);
 
-// to convert toDos into JSON format
 
-const toDosJson = JSON.stringify(toDos);
-console.log(toDosJson);
 
-//// Loops ---------------------------------------------------------------
-
-// 1. For loop
-
-<<<<<<< HEAD
-for(let i=0; i<7; i++){
-=======
-<<<<<<< HEAD
-for(let i=0; i<7; i++){
-=======
-for(let i=0; i<6; i++){
->>>>>>> ab1fd98be3269663be75d82f010796bff4a976a5
->>>>>>> c2ab2257b34c09b5c503b292874cbb6104611107
-
-    console.log(`iteration of 111022_1942  ${i}`);
-};
-
-// --------------------------------------------------
-
-function findPrimes(n) {
-    var primes = [];
-    for (var i = 2; i <= n; i++) {
-      var isPrime = true;
-      for (var j = 2; j < i; j++) {
-        if (i % j == 0) {
-          isPrime = false;
-          break;
-        }
-      }
-      if (isPrime) {
-        primes.push(i);
-      }
-    }
-    return primes;
-  }
-  
-  console.log(findPrimes(1000000000000));
   
 
 
