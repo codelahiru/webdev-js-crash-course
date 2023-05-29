@@ -171,8 +171,46 @@ console.log(toDosJson);
 
 // console.log(evenNumbers);
 
-//// 7 Conditionals - if, else, and else if -------------------------------------
+// 6.4 loop through Arrays
 
+// 6.4.1 method 1
+/*
+const toDos1 = [
+  
+  { id1: 1, 
+    text1: 'loop through arrays',
+    isCompleted1: true
+  },
+
+  { id1: 2, 
+    text1: 'meeting minutes',
+    isCompleted1: true
+  },
+
+  { id1: 3, 
+    text1: 'go for a ride',
+    isCompleted1: false
+  }
+]; 
+
+for(let i=0; i<toDos1.length; i++){
+
+  console.log(toDos1[i].text1);
+
+};
+
+
+// 6.4.2 method 2
+
+for(let todo of toDos1){
+
+  console.log(todo.text1);
+};
+
+*/
+
+//// 7 Conditionals - if, else, and else if -------------------------------------
+/*
 if (new Date().getHours() < 18) {
 
   console.log("Good day!")
@@ -209,59 +247,11 @@ if(x===10){
     console.log('nested example');
   }
 }
-
+*/
 //// 8 JavaScript Functions ----------------------------------------------------
 
 //A JavaScript function is a block of code designed to perform a particular task
 // A JavaScript function is executed when "something" invokes it (calls it)
 
 
-for (let i=0; i<10 i++){
-  console.log(`For loop No ${i}`);
-}
-
-// 6.2 while loop
-
-let i=0;
-
-while(i<4){
-  console.log(`While loop No ${i}`);
-  i++
-}
-
-// 6.3 loop through Arrays
-
-// 6.3.1 method 1
-
-const toDos1 = [
-  
-  { id1: 1, 
-    text1: 'loop through arrays',
-    isCompleted1: true
-  },
-
-  { id1: 2, 
-    text1: 'meeting minutes',
-    isCompleted1: true
-  },
-
-  { id1: 3, 
-    text1: 'go for a ride',
-    isCompleted1: false
-  }
-];
-
-for(let i=0; i<toDos1.length; i++){
-
-  console.log(toDos1[i].text1);
-
-};
-
-
-// 6.3.2 method 2
-
-for(let todo of toDos1){
-
-  console.log(todo.text1);
-};
 
