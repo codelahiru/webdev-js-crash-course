@@ -124,11 +124,98 @@ console.log(toDosJson);
 
 // 6.1 For loop
 
-for (let i=0; i<5; i++){
-  console.log(`For loop No ${i}`);
-}
+// for (let i=0; i<=5; i++){
+//   console.log(`For loop No ${i}`);
+// }
 
 // 6.2 while loop
+
+// let i = 0;
+
+// while(i < 6){
+//   console.log(`While loop No ${i}`);
+//   i++;
+// }
+
+// 6.3 High order Array Methods - forEach(), map(), filter() etc.
+ 
+// 6.3.1 forEach()
+
+// The forEach() method calls a function for each element in an array.
+// The forEach() method is not executed for empty elements.
+
+// const numbers1 = [1, 2, 3, 4, 5];
+
+// numbers1.forEach(function(number, index) {
+//   console.log(`Element at index ${index} is ${number}`);
+// });
+
+
+// // 6.3.2 map()
+
+// const numbers2 = [1, 2, 3, 4, 5];
+
+// const doubledNumbers = numbers2.map(function(number) {
+//   return number * 2;
+// });
+
+// console.log(doubledNumbers);
+
+// // 6.3.3 filter()
+
+// const numbers3 = [1, 2, 3, 4, 5];
+
+// const evenNumbers = numbers3.filter(function(number) {
+//   return number % 2 === 0;
+// });
+
+// console.log(evenNumbers);
+
+//// 7 Conditionals - if, else, and else if -------------------------------------
+
+if (new Date().getHours() < 18) {
+
+  console.log("Good day!")
+ }
+
+ // esle and else if
+
+ const x = 10;
+
+ if (x === 10){
+  console.log('x is 10 with matching data type');
+ }else if(x>10){
+  console.log('x is larger than 10');
+}else if(x<10){
+  console.log('x is smaller than 10');
+}else{
+  console.log('x is not 10');
+}
+
+// with multiple condiitons
+
+const y = 20;
+
+if (x>5 || y<21){
+  console.log('x is greater tan 5 or ya is less than 20');
+}
+
+if (x>5 && y<21){
+  console.log('x is greater tan 5 or ya is less than 20');
+}
+
+if(x===10){
+  if(y===20){
+    console.log('nested example');
+  }
+}
+
+//// 8 JavaScript Functions ----------------------------------------------------
+
+//A JavaScript function is a block of code designed to perform a particular task
+// A JavaScript function is executed when "something" invokes it (calls it)
+
+
 
 
 
