@@ -48,9 +48,10 @@ const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(e);
+    console.log(e.target);
 });
 
+const items = window.document.querySelector('.items');
 
 
 
