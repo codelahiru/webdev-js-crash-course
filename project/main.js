@@ -46,12 +46,17 @@ const btn = document.querySelector('.btn');
 
 //btn.style.background = 'green';
 
+// btn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     console.log(e.target);
+// });
+
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(e.target);
-});
-
-const items = window.document.querySelector('.items');
+    document.querySelector('#my-form').style.background = '#ccc';
+    document.querySelector('body').classList.add('bg-dark');
+    document.querySelector('header').style.alignContent;
+})
 
 
 
