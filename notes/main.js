@@ -252,3 +252,35 @@ if(x===10){
 
 //A JavaScript function is a block of code designed to perform a particular task
 // A JavaScript function is executed when "something" invokes it (calls it)
+
+// Function is called, the return value will end up in x
+let x = myFunction(4, 5);
+
+function myFunction(a, b) {
+// Function returns the product of a and b
+  return a * b;
+}
+
+console.log(x);
+
+// The () operator invokes (calls) the function:
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+
+let value0 = toCelsius(77);
+
+console.log(value0);
+
+// Accessing a function with incorrect parameters can return an incorrect answer:
+
+let value1 = toCelsius();
+
+//console.log(value1);
+
+// Accessing a function without () returns the function and not the function result:
+
+let value2 = toCelsius; 
+
+console.log(value2);
